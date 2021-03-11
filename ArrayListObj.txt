@@ -1,0 +1,20 @@
+package javaex;
+
+public class ExemploArrayListObjeto {
+    
+    public static void main(String [] args) {
+        ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+        
+        Cliente cliente2 = new Cliente("Fernando", "Moreira", 35);
+        Cliente cliente3 = new Cliente("Evandro", "da Silva", 28);
+        Cliente cliente4 = new Cliente("Victor", "Hugo", 27);
+        
+        clientes.add(cliente2);
+        clientes.add(cliente3);
+        clientes.add(cliente4);
+        
+        for (Cliente pessoa: clientes){
+            System.out.println("Nome: " + pessoa.getNome()+ ", Sobrenome: "+ pessoa.getSobrenome() + ", Idade: " + pessoa.getIdade());
+        }
+    }
+}
