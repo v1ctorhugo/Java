@@ -1,0 +1,47 @@
+package coronavirus;
+
+import java.util.LinkedList;
+
+
+public class CoronaVirus {
+
+    public static void main(String[] args) {
+        LinkedList<String> nomes = new LinkedList();
+        // Adicionando elementos na LinkedList
+        nomes.add("Guilherme");
+        nomes.add("Gustavo");
+        nomes.add("Victor");
+        nomes.add("Henrique");
+        nomes.add("André");
+        nomes.add("Fernanda");
+        nomes.add("Maria");
+        System.out.println("Conteúdo da LinkedList: " + nomes);
+
+        //Removendo elementos da LinkedList
+        nomes.remove("Fernanda");
+        nomes.remove(3);
+        nomes.removeFirst();
+        nomes.removeLast();
+        System.out.println("O conteúdo da LinkedList depois da exclusão: " + nomes);
+
+        //Ver se existe o elementos na LinkedList
+        boolean status = nomes.contains("Gustavo");
+
+        if(status){
+            System.out.println("Existe o nome da LinkedList!");
+        }else{
+            System.out.println("Não existe o nome na LinkedList!");
+        }
+
+        //Mostrar o número de elementos na LinkedList
+        int size = nomes.size();
+            System.out.println("O tamanho da LinkedList é: " + size);
+
+        //Obtendo e definindo os elementos da LinkedList
+        Object element = nomes.get(2);
+        System.out.println("Elemento retornado: " + element);
+        nomes.add(3, "José");
+        System.out.println("LinkedList com as mudanças: " + nomes);
+    }
+
+}
